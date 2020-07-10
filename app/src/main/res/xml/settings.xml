@@ -1,0 +1,3015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Wifi Receiver Settings" >
+        <EditTextPreference
+            android:defaultValue="169.254.1.1"
+            android:key="prefUserAddress"
+            android:title="Receiver IP Address" />
+        <EditTextPreference
+            android:defaultValue="2000"
+            android:key="prefUserPort"
+            android:title="Receiver Port Number" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Connection Option" >
+        <ListPreference
+            android:defaultValue="3"
+            android:entries="@array/connection_options"
+            android:entryValues="@array/connection_options_values"
+            android:key="connectionType"
+            android:title="Connection Type" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Play Sounds on App" >
+        <CheckBoxPreference 
+            android:key="setAppSound"
+    		android:title="Play Audio Through App"
+    		android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Control Text Size" >
+        <CheckBoxPreference 
+            android:key="useCustomSize"
+    		android:title="Use Defaults"
+    		android:defaultValue="true" />
+        <EditTextPreference
+            android:defaultValue="12"
+            android:key="buttonTSize"
+            android:title="Button Text Size" />
+        <EditTextPreference
+            android:defaultValue="12"
+            android:key="labelTSize"
+            android:title="Label Text Size" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="CUSTOMIZE KEYS AND ACTIONS" >
+        <PreferenceScreen
+            android:key="setM"
+            android:persistent="false"
+            android:title="Main Screen" >
+            <PreferenceScreen android:title="TOP KEYS" >
+                <PreferenceCategory android:title="KEY 1" >
+                    <EditTextPreference
+                        android:defaultValue="OFF (can&apos;t be changed)"
+                        android:key="mtk1_name"
+                        android:selectable="false"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE10\r"
+                        android:key="mtk1"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 2" >
+                    <EditTextPreference
+                        android:defaultValue="QUIET"
+                        android:key="mtk2_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE10\r"
+                        android:key="mtk2"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 3" >
+                    <EditTextPreference
+                        android:defaultValue="SND ON"
+                        android:key="mtk3_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE13\r"
+                        android:key="mtk3"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 4" >
+                    <EditTextPreference
+                        android:defaultValue="QUIET"
+                        android:key="mtk4_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE14\r"
+                        android:key="mtk4"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+            <PreferenceScreen android:title="KEYBOARD PANEL 1" >
+                <PreferenceCategory android:title="KEY 1" >
+                    <EditTextPreference
+                        android:defaultValue="CLOSE ALL"
+                        android:key="mk1_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":CL00"
+                        android:key="mk1"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 2" >
+                    <EditTextPreference
+                        android:defaultValue="OPEN ALL"
+                        android:key="mk2_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":OP00"
+                        android:key="mk2"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 3" >
+                    <EditTextPreference
+                        android:defaultValue="SMIRK WAVE"
+                        android:key="mk3_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE03"
+                        android:key="mk3"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 4" >
+                    <EditTextPreference
+                        android:defaultValue="LEIA"
+                        android:key="mk4_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE08"
+                        android:key="mk4"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 5" >
+                    <EditTextPreference
+                        android:defaultValue="CANTINA"
+                        android:key="mk5_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE07"
+                        android:key="mk5"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 6" >
+                    <EditTextPreference
+                        android:defaultValue="BEEP CANTINA"
+                        android:key="mk6_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE05"
+                        android:key="mk6"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 7" >
+                    <EditTextPreference
+                        android:defaultValue="HOLOS ON"
+                        android:key="mk7_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*ON00"
+                        android:key="mk7"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 8" >
+                    <EditTextPreference
+                        android:defaultValue="HOLOS OFF"
+                        android:key="mk8_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*OF00"
+                        android:key="mk8"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 9" >
+                    <EditTextPreference
+                        android:defaultValue="FAINT"
+                        android:key="mk9_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE06"
+                        android:key="mk9"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 10" >
+                    <EditTextPreference
+                        android:defaultValue="SCREAM"
+                        android:key="mk10_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE01"
+                        android:key="mk10"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 11" >
+                    <EditTextPreference
+                        android:defaultValue="SCREAM No Panel"
+                        android:key="mk11_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE15"
+                        android:key="mk11"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+            <PreferenceScreen android:title="KEYBOARD PANEL 2" >
+                <PreferenceCategory android:title="KEY 12" >
+                    <EditTextPreference
+                        android:defaultValue="DISCO"
+                        android:key="mk12_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE09"
+                        android:key="mk12"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 13" >
+                    <EditTextPreference
+                        android:defaultValue="WAVE"
+                        android:key="mk13_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE02"
+                        android:key="mk13"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 14" >
+                    <EditTextPreference
+                        android:defaultValue="OPEN WAVE"
+                        android:key="mk14_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE04"
+                        android:key="mk14"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 15" >
+                    <EditTextPreference
+                        android:defaultValue="ALL RC"
+                        android:key="mk15_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":RC00"
+                        android:key="mk15"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 16" >
+                    <EditTextPreference
+                        android:defaultValue="KILL BUZZ"
+                        android:key="mk16_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":ST00"
+                        android:key="mk16"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 17" >
+                    <EditTextPreference
+                        android:defaultValue="MAGIC FLICKER"
+                        android:key="mk17_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*MF05"
+                        android:key="mk17"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 18" >
+                    <EditTextPreference
+                        android:defaultValue="CLOSE NO RC"
+                        android:key="mk18_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":CL00"
+                        android:key="mk18"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 19" >
+                    <EditTextPreference
+                        android:defaultValue="OPEN TOP"
+                        android:key="mk19_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":OP11"
+                        android:key="mk19"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 20" >
+                    <EditTextPreference
+                        android:defaultValue="TOP RC"
+                        android:key="mk20_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE12"
+                        android:key="mk20"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 21" >
+                    <EditTextPreference
+                        android:defaultValue="FRONT HOLO RC"
+                        android:key="mk21_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*RC01"
+                        android:key="mk21"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 22" >
+                    <EditTextPreference
+                        android:defaultValue="HOLOS RAND"
+                        android:key="mk22_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*RD00"
+                        android:key="mk22"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="setS"
+            android:persistent="false"
+            android:title="Sound Screen" >
+            <PreferenceCategory android:title="CHOOSE A KEY SUB-CATEGORY TO EDIT..." >
+                <PreferenceScreen android:title="Rosace and Topkeys" >
+                    <PreferenceScreen android:title="TOP KEYS" >
+                        <PreferenceCategory android:title="KEY 1" >
+                            <EditTextPreference
+                                android:defaultValue="NONE (can&apos;t be changed)"
+                                android:key="ptk1_name"
+                                android:selectable="false"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ptk1"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 2" >
+                            <EditTextPreference
+                                android:defaultValue="BOTTOM"
+                                android:key="ptk2_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ptk2"
+                                android:selectable="false"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 3" >
+                            <EditTextPreference
+                                android:defaultValue="TOP"
+                                android:key="ptk3_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ptk3"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 4" >
+                            <EditTextPreference
+                                android:defaultValue="ALL"
+                                android:key="ptk4_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ptk4"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                </PreferenceScreen>
+                <PreferenceScreen android:title="GEN" >
+                    <PreferenceScreen android:title="KEY PANEL 1" >
+                        <PreferenceCategory android:title="KEY 1" >
+                            <EditTextPreference
+                                android:defaultValue="1"
+                                android:key="sgk1_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$11"
+                                android:key="sgk1"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 2" >
+                            <EditTextPreference
+                                android:defaultValue="2"
+                                android:key="sgk2_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$12"
+                                android:key="sgk2"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 3" >
+                            <EditTextPreference
+                                android:defaultValue="3"
+                                android:key="sgk3_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$13"
+                                android:key="sgk3"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 4" >
+                            <EditTextPreference
+                                android:defaultValue="4"
+                                android:key="sgk4_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$14"
+                                android:key="sgk4"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 5" >
+                            <EditTextPreference
+                                android:defaultValue="5"
+                                android:key="sgk5_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$15"
+                                android:key="sgk5"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 6" >
+                            <EditTextPreference
+                                android:defaultValue="6"
+                                android:key="sgk6_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$16"
+                                android:key="sgk6"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 7" >
+                            <EditTextPreference
+                                android:defaultValue="7"
+                                android:key="sgk7_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$17"
+                                android:key="sgk7"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 8" >
+                            <EditTextPreference
+                                android:defaultValue="8"
+                                android:key="sgk8_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$18"
+                                android:key="sgk8"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 9" >
+                            <EditTextPreference
+                                android:defaultValue="9"
+                                android:key="sgk9_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$19"
+                                android:key="sgk9"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 10" >
+                            <EditTextPreference
+                                android:defaultValue="10"
+                                android:key="sgk10_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$110"
+                                android:key="sgk10"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 11" >
+                            <EditTextPreference
+                                android:defaultValue="11"
+                                android:key="sgk11_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$111"
+                                android:key="sgk11"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                    <PreferenceScreen android:title="KEY PANEL 2" >
+                        <PreferenceCategory android:title="KEY 12" >
+                            <EditTextPreference
+                                android:defaultValue="12"
+                                android:key="sgk12_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$112"
+                                android:key="sgk12"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 13" >
+                            <EditTextPreference
+                                android:defaultValue="13"
+                                android:key="sgk13_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$113"
+                                android:key="sgk13"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 14" >
+                            <EditTextPreference
+                                android:defaultValue="14"
+                                android:key="sgk14_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$114"
+                                android:key="sgk14"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 15" >
+                            <EditTextPreference
+                                android:defaultValue="15"
+                                android:key="sgk15_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$115"
+                                android:key="sgk15"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 16" >
+                            <EditTextPreference
+                                android:defaultValue="16"
+                                android:key="sgk16_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$116"
+                                android:key="sgk16"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 17" >
+                            <EditTextPreference
+                                android:defaultValue="17"
+                                android:key="sgk17_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$117"
+                                android:key="sgk17"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 18" >
+                            <EditTextPreference
+                                android:defaultValue="18"
+                                android:key="sgk18_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$118"
+                                android:key="sgk18"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 19" >
+                            <EditTextPreference
+                                android:defaultValue="19"
+                                android:key="sgk19_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$119"
+                                android:key="sgk19"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 20" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sgk20_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sgk20"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 21" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sgk21_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sgk21"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 22" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sgk22_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sgk22"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                </PreferenceScreen>
+                <PreferenceScreen android:title="CHAT" >
+                    <PreferenceScreen android:title="KEY PANEL 1" >
+                        <PreferenceCategory android:title="KEY 1" >
+                            <EditTextPreference
+                                android:defaultValue="1"
+                                android:key="sck1_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$21"
+                                android:key="sck1"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 2" >
+                            <EditTextPreference
+                                android:defaultValue="2"
+                                android:key="sck2_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$22"
+                                android:key="sck2"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 3" >
+                            <EditTextPreference
+                                android:defaultValue="3"
+                                android:key="sck3_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$23"
+                                android:key="sck3"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 4" >
+                            <EditTextPreference
+                                android:defaultValue="4"
+                                android:key="sck4_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$24"
+                                android:key="sck4"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 5" >
+                            <EditTextPreference
+                                android:defaultValue="5"
+                                android:key="sck5_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$25"
+                                android:key="sck5"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 6" >
+                            <EditTextPreference
+                                android:defaultValue="6"
+                                android:key="sck6_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$26"
+                                android:key="sck6"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 7" >
+                            <EditTextPreference
+                                android:defaultValue="7"
+                                android:key="sck7_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$27"
+                                android:key="sck7"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 8" >
+                            <EditTextPreference
+                                android:defaultValue="8"
+                                android:key="sck8_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$28"
+                                android:key="sck8"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 9" >
+                            <EditTextPreference
+                                android:defaultValue="9"
+                                android:key="sck9_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$29"
+                                android:key="sck9"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 10" >
+                            <EditTextPreference
+                                android:defaultValue="10"
+                                android:key="sck10_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$210"
+                                android:key="sck10"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 11" >
+                            <EditTextPreference
+                                android:defaultValue="11"
+                                android:key="sck11_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$211"
+                                android:key="sck11"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                    <PreferenceScreen android:title="KEY PANEL 2" >
+                        <PreferenceCategory android:title="KEY 12" >
+                            <EditTextPreference
+                                android:defaultValue="12"
+                                android:key="sck12_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$212"
+                                android:key="sck12"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 13" >
+                            <EditTextPreference
+                                android:defaultValue="13"
+                                android:key="sck13_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$213"
+                                android:key="sck13"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 14" >
+                            <EditTextPreference
+                                android:defaultValue="14"
+                                android:key="sck14_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$214"
+                                android:key="sck14"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 15" >
+                            <EditTextPreference
+                                android:defaultValue="15"
+                                android:key="sck15_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$215"
+                                android:key="sck15"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 16" >
+                            <EditTextPreference
+                                android:defaultValue="16"
+                                android:key="sck16_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$216"
+                                android:key="sck16"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 17" >
+                            <EditTextPreference
+                                android:defaultValue="17"
+                                android:key="sck17_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$217"
+                                android:key="sck17"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 18" >
+                            <EditTextPreference
+                                android:defaultValue="18"
+                                android:key="sck18_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$218"
+                                android:key="sck18"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 19" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sck19_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sck19"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 20" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sck20_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sck20"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 21" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sck21_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sck21"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 22" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sck22_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sck22"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                </PreferenceScreen>
+                <PreferenceScreen android:title="HAPPY" >
+                    <PreferenceScreen android:title="KEY PANEL 1" >
+                        <PreferenceCategory android:title="KEY 1" >
+                            <EditTextPreference
+                                android:defaultValue="1"
+                                android:key="shk1_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$31"
+                                android:key="shk1"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 2" >
+                            <EditTextPreference
+                                android:defaultValue="2"
+                                android:key="shk2_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$32"
+                                android:key="shk2"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 3" >
+                            <EditTextPreference
+                                android:defaultValue="3"
+                                android:key="shk3_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$33"
+                                android:key="shk3"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 4" >
+                            <EditTextPreference
+                                android:defaultValue="4"
+                                android:key="shk4_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$34"
+                                android:key="shk4"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 5" >
+                            <EditTextPreference
+                                android:defaultValue="5"
+                                android:key="shk5_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$35"
+                                android:key="shk5"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 6" >
+                            <EditTextPreference
+                                android:defaultValue="6"
+                                android:key="shk6_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$36"
+                                android:key="shk6"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 7" >
+                            <EditTextPreference
+                                android:defaultValue="7"
+                                android:key="shk7_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$37"
+                                android:key="shk7"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 8" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk8_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk8"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 9" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk9_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk9"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 10" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk10_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk10"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 11" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk11_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk11"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                    <PreferenceScreen android:title="KEY PANEL 2" >
+                        <PreferenceCategory android:title="KEY 12" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk12_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk12"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 13" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk13_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk13"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 14" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk14_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk14"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 15" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk15_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk15"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 16" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk16_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk16"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 17" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk17_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk17"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 18" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk18_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk18"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 19" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk19_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk19"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 20" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk20_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk20"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 21" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk21_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk21"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 22" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk22_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="shk22"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                </PreferenceScreen>
+                <PreferenceScreen android:title="SAD" >
+                    <PreferenceScreen android:title="KEY PANEL 1" >
+                        <PreferenceCategory android:title="KEY 1" >
+                            <EditTextPreference
+                                android:defaultValue="1"
+                                android:key="sdk1_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$41"
+                                android:key="sdk1"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 2" >
+                            <EditTextPreference
+                                android:defaultValue="2"
+                                android:key="sdk2_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$42"
+                                android:key="sdk2"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 3" >
+                            <EditTextPreference
+                                android:defaultValue="3"
+                                android:key="sdk3_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$43"
+                                android:key="sdk3"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 4" >
+                            <EditTextPreference
+                                android:defaultValue="4"
+                                android:key="sdk4_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$44"
+                                android:key="sdk4"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 5" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk5_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk5"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 6" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk6_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk6"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 7" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk7_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk7"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 8" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk8_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk8"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 9" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk9_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk9"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 10" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk10_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk10"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 11" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk11_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk11"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                    <PreferenceScreen android:title="KEY PANEL 2" >
+                        <PreferenceCategory android:title="KEY 12" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk12_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk12"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 13" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk13_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk13"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 14" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk14_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk14"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 15" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk15_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk15"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 16" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk16_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk16"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 17" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk17_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk17"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 18" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk18_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk18"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 19" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk19_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk19"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 20" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk20_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk20"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 21" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk21_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk21"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 22" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk22_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="sdk22"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                </PreferenceScreen>
+                <PreferenceScreen android:title="WHISTLE" >
+                    <PreferenceScreen android:title="KEY PANEL 1" >
+                        <PreferenceCategory android:title="KEY 1" >
+                            <EditTextPreference
+                                android:defaultValue="Whistle"
+                                android:key="swk1_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$51"
+                                android:key="swk1"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 2" >
+                            <EditTextPreference
+                                android:defaultValue="Beep Whistle"
+                                android:key="swk2_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$52"
+                                android:key="swk2"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 3" >
+                            <EditTextPreference
+                                android:defaultValue="High Whistle"
+                                android:key="swk3_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$53"
+                                android:key="swk3"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 4" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk4_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk4"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 5" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk5_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk5"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 6" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk6_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk6"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 7" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk7_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk7"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 8" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk8_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk8"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 9" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk9_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk9"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 10" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk10_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk10"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 11" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk11_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk11"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                    <PreferenceScreen android:title="KEY PANEL 2" >
+                        <PreferenceCategory android:title="KEY 12" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk12_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk12"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 13" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk13_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk13"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 14" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk14_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk14"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 15" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk15_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk15"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 16" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk16_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk16"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 17" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk17_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk17"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 18" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk18_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk18"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 19" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk19_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk19"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 20" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk20_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk20"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 21" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk21_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk21"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 22" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk22_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="swk22"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                </PreferenceScreen>
+                <PreferenceScreen android:title="SCREAM" >
+                    <PreferenceScreen android:title="KEY PANEL 1" >
+                        <PreferenceCategory android:title="KEY 1" >
+                            <EditTextPreference
+                                android:defaultValue="SCREAM"
+                                android:key="ssk1_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$61"
+                                android:key="ssk1"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 2" >
+                            <EditTextPreference
+                                android:defaultValue="ERROR"
+                                android:key="ssk2_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$62"
+                                android:key="ssk2"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 3" >
+                            <EditTextPreference
+                                android:defaultValue="SHORT CRCT"
+                                android:key="ssk3_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$63"
+                                android:key="ssk3"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 4" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk4_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk4"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 5" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk5_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk5"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 6" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk6_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk6"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 7" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk7_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk7"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 8" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk8_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk8"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 9" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk9_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk9"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 10" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk10_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk10"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 11" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk11_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk11"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                    <PreferenceScreen android:title="KEY PANEL 2" >
+                        <PreferenceCategory android:title="KEY 12" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk12_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk12"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 13" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk13_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk13"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 14" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk14_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk14"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 15" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk15_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk15"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 16" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk16_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk16"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 17" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk17_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk17"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 18" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk18_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk18"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 19" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk19_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk19"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 20" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk20_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk20"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 21" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk21_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk21"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 22" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk22_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="ssk22"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                </PreferenceScreen>
+                <PreferenceScreen android:title="LEIA" >
+                    <PreferenceScreen android:title="KEY PANEL 1" >
+                        <PreferenceCategory android:title="KEY 1" >
+                            <EditTextPreference
+                                android:defaultValue="Message (clean)"
+                                android:key="slk1_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$71"
+                                android:key="slk1"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 2" >
+                            <EditTextPreference
+                                android:defaultValue="Help me!"
+                                android:key="slk2_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$72"
+                                android:key="slk2"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 3" >
+                            <EditTextPreference
+                                android:defaultValue="Message"
+                                android:key="slk3_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$73"
+                                android:key="slk3"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 4" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk4_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk4"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 5" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk5_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk5"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 6" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk6_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk6"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 7" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk7_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk7"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 8" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk8_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk8"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 9" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk9_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk9"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 10" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk10_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk10"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 11" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk11_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk11"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                    <PreferenceScreen android:title="KEY PANEL 2" >
+                        <PreferenceCategory android:title="KEY 12" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk12_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk12"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 13" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk13_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk13"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 14" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk14_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk14"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 15" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk15_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk15"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 16" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk16_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk16"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 17" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk17_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk17"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 18" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk18_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk18"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 19" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk19_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk19"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 20" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk20_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk20"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 21" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk21_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk21"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 22" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk22_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="slk22"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                </PreferenceScreen>
+                <PreferenceScreen android:title="MUSIC" >
+                    <PreferenceScreen android:title="KEY PANEL 1" >
+                        <PreferenceCategory android:title="KEY 1" >
+                            <EditTextPreference
+                                android:defaultValue="CANTINA BEEP"
+                                android:key="smk1_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$81"
+                                android:key="smk1"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 2" >
+                            <EditTextPreference
+                                android:defaultValue="STAR WARS"
+                                android:key="smk2_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$82"
+                                android:key="smk2"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 3" >
+                            <EditTextPreference
+                                android:defaultValue="MARCH"
+                                android:key="smk3_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$83"
+                                android:key="smk3"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 4" >
+                            <EditTextPreference
+                                android:defaultValue="MAHNA MAHNA"
+                                android:key="smk4_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$84"
+                                android:key="smk4"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 5" >
+                            <EditTextPreference
+                                android:defaultValue="CANTINA BEEP"
+                                android:key="smk5_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$85"
+                                android:key="smk5"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 6" >
+                            <EditTextPreference
+                                android:defaultValue="STAYIN&apos; ALIVE"
+                                android:key="smk6_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue="$86"
+                                android:key="smk6"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 7" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk7_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk7"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 8" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk8_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk8"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 9" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk9_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk9"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 10" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk10_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk10"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 11" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk11_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk11"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                    <PreferenceScreen android:title="KEY PANEL 2" >
+                        <PreferenceCategory android:title="KEY 12" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk12_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk12"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 13" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk13_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk13"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 14" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk14_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk14"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 15" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk15_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk15"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 16" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk16_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk16"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 17" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk17_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk17"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 18" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk18_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk18"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 19" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk19_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk19"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 20" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk20_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk20"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 21" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk21_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk21"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                        <PreferenceCategory android:title="KEY 22" >
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk22_name"
+                                android:title="NAME" />
+                            <EditTextPreference
+                                android:defaultValue=""
+                                android:key="smk22"
+                                android:title="ACTION" />
+                        </PreferenceCategory>
+                    </PreferenceScreen>
+                </PreferenceScreen>
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="setP"
+            android:persistent="false"
+            android:title="Panel Screen" >
+            <PreferenceScreen android:title="TOP KEYS" >
+                <PreferenceCategory android:title="KEY 1" >
+                    <EditTextPreference
+                        android:defaultValue="NONE (can&apos;t be changed)"
+                        android:key="ptk1_name"
+                        android:selectable="false"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="ptk1"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 2" >
+                    <EditTextPreference
+                        android:defaultValue="BOTTOM"
+                        android:key="ptk2_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="ptk2"
+                        android:selectable="false"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 3" >
+                    <EditTextPreference
+                        android:defaultValue="TOP"
+                        android:key="ptk3_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="ptk3"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 4" >
+                    <EditTextPreference
+                        android:defaultValue="ALL"
+                        android:key="ptk4_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="ptk4"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+            <PreferenceScreen android:title="KEYBOARD PANEL 1" >
+                <PreferenceCategory android:title="KEY 1" >
+                    <EditTextPreference
+                        android:defaultValue="ALL OPEN"
+                        android:key="pk1_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":OP00"
+                        android:key="pk1"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 2" >
+                    <EditTextPreference
+                        android:defaultValue="ALL CLOSE"
+                        android:key="pk2_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":CL00"
+                        android:key="pk2"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 3" >
+                    <EditTextPreference
+                        android:defaultValue="ALL OFF"
+                        android:key="pk3_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":ST00"
+                        android:key="pk3"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 4" >
+                    <EditTextPreference
+                        android:defaultValue="OPEN"
+                        android:key="pk4_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":OPxx"
+                        android:key="pk4"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 5" >
+                    <EditTextPreference
+                        android:defaultValue="CLOSE"
+                        android:key="pk5_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":CLxx"
+                        android:key="pk5"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 6" >
+                    <EditTextPreference
+                        android:defaultValue="SERVO OFF"
+                        android:key="pk6_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":STxx"
+                        android:key="pk6"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 7" >
+                    <EditTextPreference
+                        android:defaultValue="RC ON"
+                        android:key="pk7_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":RCxx"
+                        android:key="pk7"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 8" >
+                    <EditTextPreference
+                        android:defaultValue="RC HOLD"
+                        android:key="pk8_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":HDxx"
+                        android:key="pk8"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 9" >
+                    <EditTextPreference
+                        android:defaultValue="RC OFF"
+                        android:key="pk9_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":STxx"
+                        android:key="pk9"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 10" >
+                    <EditTextPreference
+                        android:defaultValue="ALL RC"
+                        android:key="pk10_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":RC00"
+                        android:key="pk10"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 11" >
+                    <EditTextPreference
+                        android:defaultValue="TOP RC"
+                        android:key="pk11_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE12"
+                        android:key="pk11"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+            <PreferenceScreen android:title="KEYBOARD PANEL 2" >
+                <PreferenceCategory android:title="KEY 12" >
+                    <EditTextPreference
+                        android:defaultValue="STOP SEQ."
+                        android:key="pk12_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE00"
+                        android:key="pk12"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 13" >
+                    <EditTextPreference
+                        android:defaultValue="SCREAM"
+                        android:key="pk13_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE51"
+                        android:key="pk13"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 14" >
+                    <EditTextPreference
+                        android:defaultValue="WAVE"
+                        android:key="pk14_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE52"
+                        android:key="pk14"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 15" >
+                    <EditTextPreference
+                        android:defaultValue="SMIRK WAVE"
+                        android:key="pk15_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE53"
+                        android:key="pk15"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 16" >
+                    <EditTextPreference
+                        android:defaultValue="OPEN WAVE"
+                        android:key="pk16_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE54"
+                        android:key="pk16"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 17" >
+                    <EditTextPreference
+                        android:defaultValue="ANTS MARCH"
+                        android:key="pk17_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE55"
+                        android:key="pk17"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 18" >
+                    <EditTextPreference
+                        android:defaultValue="FAINT"
+                        android:key="pk18_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE56"
+                        android:key="pk18"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 19" >
+                    <EditTextPreference
+                        android:defaultValue="RYTHMIC"
+                        android:key="pk19_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":SE57"
+                        android:key="pk19"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 20" >
+                    <EditTextPreference
+                        android:defaultValue="CLOSE ALL"
+                        android:key="pk20_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":CL00"
+                        android:key="pk20"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 21" >
+                    <EditTextPreference
+                        android:defaultValue="OPEN TOP"
+                        android:key="pk21_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":OP11"
+                        android:key="pk21"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 22" >
+                    <EditTextPreference
+                        android:defaultValue="OPEN BOTTOM"
+                        android:key="pk22_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=":OP12"
+                        android:key="pk22"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="setH"
+            android:persistent="false"
+            android:title="Holos Screen" >
+            <PreferenceScreen android:title="TOP KEYS" >
+                <PreferenceCategory android:title="KEY 1" >
+                    <EditTextPreference
+                        android:defaultValue="NONE (can&apos;t be changed)"
+                        android:key="htk1_name"
+                        android:selectable="false"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="htk1"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 2" >
+                    <EditTextPreference
+                        android:defaultValue="FRONT"
+                        android:key="htk2_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="htk2"
+                        android:selectable="false"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 3" >
+                    <EditTextPreference
+                        android:defaultValue="TOP BACK"
+                        android:key="htk3_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="htk3"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 4" >
+                    <EditTextPreference
+                        android:defaultValue="ALL"
+                        android:key="htk4_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="htk4"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+            <PreferenceScreen android:title="KEYBOARD PANEL 1" >
+                <PreferenceCategory android:title="KEY 1" >
+                    <EditTextPreference
+                        android:defaultValue="LIGHT ON"
+                        android:key="hk1_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*ONxx"
+                        android:key="hk1"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 2" >
+                    <EditTextPreference
+                        android:defaultValue="LIGHT OFF"
+                        android:key="hk2_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*OFxx"
+                        android:key="hk2"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 3" >
+                    <EditTextPreference
+                        android:defaultValue="HP RESET"
+                        android:key="hk3_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*ST00"
+                        android:key="hk3"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 4" >
+                    <EditTextPreference
+                        android:defaultValue="RANDOM MOVE"
+                        android:key="hk4_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*RDxx"
+                        android:key="hk4"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 5" >
+                    <EditTextPreference
+                        android:defaultValue="RC MOVE"
+                        android:key="hk5_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*RCxx"
+                        android:key="hk5"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 6" >
+                    <EditTextPreference
+                        android:defaultValue="STILL"
+                        android:key="hk6_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*HDxx"
+                        android:key="hk6"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 7" >
+                    <EditTextPreference
+                        android:defaultValue="MAGIC ON"
+                        android:key="hk7_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*MO99"
+                        android:key="hk7"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 8" >
+                    <EditTextPreference
+                        android:defaultValue="MAGIC 3s"
+                        android:key="hk8_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*MO03"
+                        android:key="hk8"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 9" >
+                    <EditTextPreference
+                        android:defaultValue="MAGIC OFF"
+                        android:key="hk9_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*MO00"
+                        android:key="hk9"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 10" >
+                    <EditTextPreference
+                        android:defaultValue="MAGIC FLICKER"
+                        android:key="hk10_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*MF99"
+                        android:key="hk10"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 11" >
+                    <EditTextPreference
+                        android:defaultValue="MAGIC FLICK 5s"
+                        android:key="hk11_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*MF05"
+                        android:key="hk11"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+            <PreferenceScreen android:title="KEYBOARD PANEL 2" >
+                <PreferenceCategory android:title="KEY 12" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk12_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk12"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 13" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk13_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk13"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 14" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk14_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk14"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 15" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk15_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk15"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 16" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk16_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk16"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 17" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk17_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk17"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 18" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk18_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk18"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 19" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk19_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk19"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 20" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk20_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk20"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 21" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk21_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk21"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 22" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk22_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="hk22"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="setL"
+            android:persistent="false"
+            android:title="Logics Screen" >
+            <PreferenceScreen android:title="TOP KEYS" >
+                <PreferenceCategory android:title="KEY 1" >
+                    <EditTextPreference
+                        android:defaultValue="RESET (can&apos;t be changed)"
+                        android:key="ltk1_name"
+                        android:selectable="false"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@0T1"
+                        android:key="ltk1"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 2" >
+                    <EditTextPreference
+                        android:defaultValue="ALL TEXT"
+                        android:key="ltk2_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="(can&apos;t be changed)"
+                        android:key="ltk2"
+                        android:selectable="false"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 3" >
+                    <EditTextPreference
+                        android:defaultValue="AURA BESH"
+                        android:key="ltk3_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@xxP61"
+                        android:key="ltk3"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 4" >
+                    <EditTextPreference
+                        android:defaultValue="LATIN"
+                        android:key="ltk4_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@xxP60"
+                        android:key="ltk4"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+            <PreferenceScreen android:title="KEYBOARD PANEL 1" >
+                <PreferenceCategory android:title="KEY 1" >
+                    <EditTextPreference
+                        android:defaultValue="NORMAL"
+                        android:key="lk1_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@0T1\\p*MO00"
+                        android:key="lk1"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 2" >
+                    <EditTextPreference
+                        android:defaultValue="SCREAM"
+                        android:key="lk2_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@0T5"
+                        android:key="lk2"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 3" >
+                    <EditTextPreference
+                        android:defaultValue="SHORT CIRCUIT"
+                        android:key="lk3_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@0T4"
+                        android:key="lk3"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 4" >
+                    <EditTextPreference
+                        android:defaultValue="FLASH"
+                        android:key="lk4_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@0T2\\p\@0W5"
+                        android:key="lk4"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 5" >
+                    <EditTextPreference
+                        android:defaultValue="ALARM"
+                        android:key="lk5_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@0T3\\p\@0W5"
+                        android:key="lk5"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 6" >
+                    <EditTextPreference
+                        android:defaultValue="LEIA"
+                        android:key="lk6_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@0T6"
+                        android:key="lk6"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 7" >
+                    <EditTextPreference
+                        android:defaultValue="MARCH"
+                        android:key="lk7_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@0T11"
+                        android:key="lk7"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 8" >
+                    <EditTextPreference
+                        android:defaultValue="DISCO"
+                        android:key="lk8_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@0T92"
+                        android:key="lk8"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 9" >
+                    <EditTextPreference
+                        android:defaultValue="HOLOS ON"
+                        android:key="lk9_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@6T1\\p\@7T1\\p\@8T1"
+                        android:key="lk9"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 10" >
+                    <EditTextPreference
+                        android:defaultValue="HOLOS OFF"
+                        android:key="lk10_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@0D"
+                        android:key="lk10"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 11" >
+                    <EditTextPreference
+                        android:defaultValue="MAGIC FLICK 5s"
+                        android:key="lk11_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*MF05"
+                        android:key="lk11"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+            <PreferenceScreen android:title="KEYBOARD PANEL 2" >
+                <PreferenceCategory android:title="KEY 12" >
+                    <EditTextPreference
+                        android:defaultValue="TEST"
+                        android:key="lk12_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@0T0"
+                        android:key="lk12"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 13" >
+                    <EditTextPreference
+                        android:defaultValue="STAR WARS"
+                        android:key="lk13_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@0T10"
+                        android:key="lk13"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 14" >
+                    <EditTextPreference
+                        android:defaultValue="MAGIC ON"
+                        android:key="lk14_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*MO99"
+                        android:key="lk14"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 15" >
+                    <EditTextPreference
+                        android:defaultValue="MAGIC OFF"
+                        android:key="lk15_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*MO00"
+                        android:key="lk15"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 16" >
+                    <EditTextPreference
+                        android:defaultValue="MAGIC 5s"
+                        android:key="lk16_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*MO05"
+                        android:key="lk16"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 17" >
+                    <EditTextPreference
+                        android:defaultValue="MAGIC FLICKER"
+                        android:key="lk17_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="*MF99"
+                        android:key="lk17"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 18" >
+                    <EditTextPreference
+                        android:defaultValue="ALL RESET"
+                        android:key="lk18_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue="\@0T1\\p*MO00"
+                        android:key="lk18"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 19" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="lk19_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="lk19"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 20" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="lk20_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="lk20"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 21" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="lk21_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="lk21"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="KEY 22" >
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="lk22_name"
+                        android:title="NAME" />
+                    <EditTextPreference
+                        android:defaultValue=""
+                        android:key="lk22"
+                        android:title="ACTION" />
+                </PreferenceCategory>
+            </PreferenceScreen>
+        </PreferenceScreen>
+
+        <com.program.ResetDefDiagPref
+            android:dialogMessage="Revert all values to their defaults?"
+            android:key="resetDialog"
+            android:negativeButtonText="No, KEEP current values"
+            android:persistent="false"
+            android:positiveButtonText="Yes, RESET all values"
+            android:summary="Reset all settings to their initial values."
+            android:title="Reset to default" >
+        </com.program.ResetDefDiagPref>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="ABOUT R2 TOUCH" >
+        <PreferenceScreen android:title="Advanced Setup Guide..." >
+            <PreferenceCategory android:layout="@layout/setup_guide" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout="@layout/versionandcopy"
+        android:title="Version Number" />
+
+</PreferenceScreen>

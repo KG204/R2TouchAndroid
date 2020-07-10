@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/home_Button"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.1"
+        android:background="@null"
+        android:scaleType="fitStart"
+        android:src="@drawable/button_image" />
+
+    <views.CustomLEDViewGroup
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4" >
+        
+        <ImageView
+            android:id="@+id/toplogic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/led" />
+        
+        <EditText
+            android:id="@+id/top_ld"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Top FLD"
+            android:imeOptions="actionDone" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/bottomlogic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/led" />
+        
+        <EditText
+            android:id="@+id/bottom_ld"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Bottom FLD"
+            android:imeOptions="actionDone" >
+        </EditText>
+        
+        <ImageView
+            android:id="@+id/rearlogic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/led2" />
+
+        <EditText
+            android:id="@+id/rear_ld"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="RLD"
+            android:imeOptions="actionDone" >
+
+            <requestFocus />
+        </EditText>
+    </views.CustomLEDViewGroup>
+
+    <views.SoundViewGroup
+        android:id="@+id/page_twoS"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.5" >
+
+        <ImageButton
+            android:id="@+id/button_reset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:baselineAligned="false"
+            android:onClick="handleButtonClick"
+            android:scaleType="fitEnd"
+            android:src="@drawable/reset_button_image"
+            android:textColor="#ff0000"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/frame_attempt_2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:text="TEXT MODE:"
+                android:textColor="#f6b93f"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/panel_selecter_lay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75"
+                android:baselineAligned="false" >
+
+                <Button
+                    android:id="@+id/button_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/default_button_image"
+                    android:baselineAligned="false"
+                    android:text="ALL TEXT"
+                    android:textColor="#e0ca64"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_aura"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/default_button_image"
+                    android:baselineAligned="false"
+                    android:text="AURA BESH"
+                    android:textColor="#e0ca64"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_latin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/default_button_image"
+                    android:baselineAligned="false"
+                    android:text="LATIN"
+                    android:textColor="#e0ca64"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" >
+
+            <TableLayout
+                android:id="@+id/page_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/frame_attempt_2" >
+
+                <TableRow
+                    android:id="@+id/tableRow0"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:baselineAligned="false" >
+
+                    <TextView
+                        android:id="@+id/logics1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="LOGICS CONTROL:"
+                        android:textColor="#f6b93f"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false" >
+
+                    <Button
+                        android:id="@+id/buttons1"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="NORMAL"
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons2"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="SCREAM"
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons3"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="SHORT CIRCUIT"
+                        android:textColor="#e0ca64" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false" >
+
+                    <Button
+                        android:id="@+id/buttons4"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="FLASH"
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons5"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="ALARM"
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons6"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="LEIA"
+                        android:textColor="#e0ca64" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false" >
+
+                    <Button
+                        android:id="@+id/buttons7"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="MARCH"
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons8"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="DISCO"
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons9"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="HOLOS ON"
+                        android:textColor="#e0ca64" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false" >
+
+                    <Button
+                        android:id="@+id/buttons10"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="HOLOS OFF"
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons11"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="MAGIC FLICK 5s"
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons12"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="> >"
+                        android:textColor="#00ff00" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/page_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/frame_attempt_2" >
+
+                <TableRow
+                    android:id="@+id/tableRow02"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:baselineAligned="false" >
+
+                    <TextView
+                        android:id="@+id/logics2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="LOGICS CONTROL:"
+                        android:textColor="#f6b93f"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow1A"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false" >
+
+                    <Button
+                        android:id="@+id/buttons13"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="TEST"
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons14"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="STAR WARS"
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons15"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="MAGIC ON"
+                        android:textColor="#e0ca64" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2A"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false" >
+
+                    <Button
+                        android:id="@+id/buttons16"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="MAGIC OFF"
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons17"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="MAGIC 5s"
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons18"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="MAGIC FLICKER"
+                        android:textColor="#e0ca64" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3A"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false" >
+
+                    <Button
+                        android:id="@+id/buttons19"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="ALL RESET"
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons20"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text=""
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons21"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text=""
+                        android:textColor="#e0ca64" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4A"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false" >
+
+                    <Button
+                        android:id="@+id/buttons22"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text="&lt; &lt;"
+                        android:textColor="#00ff00" />
+
+                    <Button
+                        android:id="@+id/buttons23"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text=""
+                        android:textColor="#e0ca64" />
+
+                    <Button
+                        android:id="@+id/buttons24"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_button_image"
+                        android:text=""
+                        android:textColor="#e0ca64" />
+                </TableRow>
+            </TableLayout>
+        </android.support.v4.view.ViewPager>
+    </views.SoundViewGroup>
+
+</LinearLayout>

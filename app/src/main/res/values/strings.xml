@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">R2 Touch Android</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="first">Test</string>
+    <string name="last">test2</string>
+
+    <string name="app_name2">Android_Preferences_example</string>
+    <string name="hello_world2">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+ 
+    
+    <string name="main1">Send crash reports</string>
+    <string name="main2">Send crash reports</string>
+    <string name="main3">Send crash reports</string>
+    <string name="main4">Send crash reports</string>
+    <string name="main5">Send crash reports</string>
+    <string name="main6">Send crash reports</string>
+    <string name="main7">Send crash reports</string>
+    <string name="main8">Send crash reports</string>
+    <string name="main9">Send crash reports</string>
+    <string name="main10">Send crash reports</string>
+    <string name="main11">Send crash reports</string>
+    <string name="main12">Send crash reports</string>
+    <string name="main13">Send crash reports</string>
+    <string name="main14">Send crash reports</string>
+    <string name="main15">Send crash reports</string>
+    <string name="main16">Send crash reports</string>
+    <string name="main17">Send crash reports</string>
+    <string name="main18">Send crash reports</string>
+    <string name="main19">Send crash reports</string>
+    <string name="main20">Send crash reports</string>
+    <string name="main21">Send crash reports</string>
+    <string name="main22">Send crash reports</string>
+    <string name="main23">Send crash reports</string>
+    <string name="main24">Send crash reports</string>
+     
+    <string name="pref_send_report">Send crash reports</string>
+    <string name="pref_send_report_summary">Helps to fix bugs</string>
+    <string name="pref_sync_frequency">Sync frequency</string>
+    <string name="pref_sync_frequency_summary">Set the sync frequency</string>
+    <string name="pref_user_name">Set username</string>
+    <string name="pref_user_name_summary">Set your username</string>
+     
+    <string name="pref_user_profile">User Profile</string>
+    <string name="pref_update_setting">Update Settings</string>
+    
+    <string name="setup_guide_title_bold">R2 Touch Advanced Setup Guide</string>
+    <string name="setup_guide_title_p">For full help visit www.curiousmarc.com</string>
+    <string name="setup_guide_wifly_bold">Setting up the WiFly receiver radio</string>
+    <string name="setup_guide_wifly_p">Information about the receiver setup can be found at: www.curiousmarc.com, under the MarcDuino tab.</string>
+    <string name="setup_guide_custom_bold">Customizing R2 Touch</string>
+    <string name="setup_guide_custom_p">For advanced use, most button title and resulting string commands can be customized using the settings menu, under the 
+        \"Customize Keys and Actions\" section. Choose the appropriate screen you want to customize. A menu with the name of each key and string being sent when
+        the key is pressed (the action) will appear. You can type any ASCII string in the action field.\n\nStrings can include the following special control characters:
+        \n\n\\n is used for the line feed character.\n\n\\p is used to insert a 100ms delay in the serial stream (use it to separate consecutive commands and allow the
+        receiving processor time to execute them). You can use several \\p in a row to create a longer delay.\n\nxx has a special meaning in screens where separate elements
+        can be selected(Panel, Holo, and Logic screens). If a commands includes xx, the command will be sent as many times as there are panels or holos selected, with 
+        the xx token being replaced by the number of the panel (01, 02, etc.). A delay is inserted between successive commands, it is 50ms in the Holo and Panel screens,
+         and 100 ms in the Logic screen.
+         
+         \n\nSome buttons cannot be customized:\n- The top row buttons related to selection control (for example, \"Select All\" buttons in the Holo and Panel screen for example)
+         cannot be changed.\n- The titles of the sound rosace buttons can not be customized (but the actions can).\n- The title of the half round button to the left of 
+         the top row (usually Off or Reset) cannot be customized.\n- The Auto button at the center of the sound rosace has two actions, one when turned on, and one when turned 
+         off. In the Rosace Key settings page, the \'on\' action is Key 9, the \'off\' action is Key 10.\n- The green arrows at the bottom of the keyboard are used for keyboard 
+         navigation and are not customizable.
+         
+         \n\nYour customized button preferences are saved in the app\'s preference files. The original R2 Touch keys and actions can be reset by using the \"Reset to Defaults\" button. 
+         This will replace the preference files with a copy of the factory originals.\n\nFurther information about the MarcDuino command format can be found at www.curiousmarc.com 
+         under the MarcDuino tab.</string>
+        
+    <string name="notice_not_iphone">This app was not created by CuriousMarc. This app is a recreation of the original iphone app, with graphics and name licensed by the original creator. The app has been approved by CuriousMarc, the original creator. If there are any issues with using this app; any questions, comments, or complaints, please direct them to r2touchandroid@outlook.com.</string>
+    
+</resources>

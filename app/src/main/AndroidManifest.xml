@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.program.r2_touch_android"
+    android:versionCode="7"
+    android:versionName="1.4" >
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.program.Main_activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >:
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+            <intent-filter>
+    			<action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+  			</intent-filter>
+  			<meta-data
+    			android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" 
+      			android:resource="@xml/device_filter" />
+        </activity>
+        <activity android:name="com.program.Sound_activity2"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >     
+        </activity>
+        <activity android:name="com.program.HP_activity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity android:name="com.program.LED_activity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity android:name="com.program.Panel_activity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity android:name="com.program.UserSettingActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name="com.program.Client"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.program.Message_generator">
+        
+        </activity>
+    </application>
+
+</manifest>
