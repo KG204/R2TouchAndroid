@@ -1,8 +1,6 @@
 package com.program;
 
 import com.program.r2_touch_android.R;
-import com.program.Client.ClientThread;
-import com.program.Sound_activity2.WizardPagerAdapter;
 import com.squareup.picasso.Picasso;
 
 import android.R.string;
@@ -37,8 +35,8 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.preference.PreferenceManager;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 //import android.util.Log;
 import android.view.Display;
 import android.view.MotionEvent;

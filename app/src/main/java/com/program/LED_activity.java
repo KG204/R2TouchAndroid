@@ -7,14 +7,13 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 import com.program.r2_touch_android.R;
-import com.program.Main_activity.ClientThread;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 import android.view.Display;
 import android.view.KeyEvent;
 import android.view.View;

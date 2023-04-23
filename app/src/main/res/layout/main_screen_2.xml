@@ -30,7 +30,7 @@
             android:layout_marginTop="10dp"
             android:visibility="visible" />
 
-        <android.support.v4.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/pagerSoundAct"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -155,7 +155,7 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <android.support.v4.view.ViewPager
+                <androidx.viewpager.widget.ViewPager
                     android:id="@+id/pagerSound"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -622,9 +622,9 @@
                                 android:textColor="#6bc7eb" />
                         </TableRow>
                     </TableLayout>
-                </android.support.v4.view.ViewPager>
+                </androidx.viewpager.widget.ViewPager>
             </views.SoundViewGroup>
-        </android.support.v4.view.ViewPager>
+        </androidx.viewpager.widget.ViewPager>
     </FrameLayout>
 
     <views.CustomViewGroupPanel
@@ -753,7 +753,7 @@
             android:background="@drawable/sound_ac"
             android:onClick="handleButtonClick" />
 
-        <android.support.v4.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -1238,7 +1238,7 @@
                         android:textColor="#e0ca64" />
                 </TableRow>
             </TableLayout>
-        </android.support.v4.view.ViewPager>
+        </androidx.viewpager.widget.ViewPager>
     </views.CustomViewGroupPanel>
 
 </LinearLayout>

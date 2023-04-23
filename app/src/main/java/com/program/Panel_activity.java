@@ -1,7 +1,6 @@
 package com.program;
 
 import com.program.r2_touch_android.R;
-import com.program.HP_activity.WizardPagerAdapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,8 +9,8 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;

@@ -196,7 +196,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <android.support.v4.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -673,7 +673,7 @@
                         android:textColor="#e0ca64" />
                 </TableRow>
             </TableLayout>
-        </android.support.v4.view.ViewPager>
+        </androidx.viewpager.widget.ViewPager>
     </views.SoundViewGroup>
 
 </LinearLayout>

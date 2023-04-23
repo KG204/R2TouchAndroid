@@ -1,25 +1,28 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "com.program.r2_touch_android"
         minSdkVersion 14
-        targetSdkVersion 25
+        targetSdkVersion 33
     }
 
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.debug
+        }
+        debug {
+            signingConfig signingConfigs.debug
         }
     }
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:25.1.1'
-    compile 'com.android.support:gridlayout-v7:25.1.1'
-    compile 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
 }

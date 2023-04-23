@@ -43,8 +43,8 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.drawable.LayerDrawable;
 import android.view.MotionEvent;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 public class Sound_activity2 extends Activity {
 	/** Called when the activity is first created. */
